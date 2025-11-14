@@ -1,11 +1,14 @@
-Space Mission Control
+🛰️ Space Mission Control
 
-v0.1.0
+A lightweight, interactive mission-simulation web application built with Vite, JavaScript, HTML, and CSS.
 
-A lightweight web-application built with JavaScript/HTML/CSS (powered by Vite) that simulates controlling and monitoring space missions.
-(Repository by ebk1996)
+🔖 Badges
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+![Version](https://img.shields.io/badge/version-v0.1.0-blue)
+![License](https://img.shields.io/badge/license-MIT-lightgrey)
+![Made with](https://img.shields.io/badge/made%20with-JavaScript-yellow)
 
-🛰️ Table of Contents
+📘 Table of Contents
 
 Motivation
 
@@ -19,132 +22,124 @@ Installation
 
 Running Locally
 
+Project Structure
+
 Usage
 
-Project Structure
+Screenshots
+
+Roadmap
 
 Contributing
 
 License
 
-Roadmap
+🚀 Motivation
 
-Motivation
+Space mission control systems are full of complex states, events, and real-time telemetry.
+This project recreates a simplified version of that ecosystem in a browser, offering an environment to:
 
-Space mission control systems carry an incredible complexity — this project is a playful exploration of that domain in a web-environment. The goal is to provide an interactive experience where users can:
+Simulate mission lifecycles
 
-launch / monitor simulated missions
+Display live-updating telemetry
 
-view telemetry / status updates
+Explore UI/UX patterns for stateful systems
 
-manage mission states (pre-launch, launch, orbit, re-entry, etc)
-This provides a fun sandbox for doing UI/UX around real-time data flows, animations, state machines, and a bit of sci-fi flair.
+Experiment with animations, timers, and mission logic
 
-Features
+It’s fun, educational, and extendable.
 
-Here are some of the core features available in this version (v0.1.0):
+✨ Features
+✔ Mission lifecycle simulation (launch → orbit → re-entry)  
+✔ Dashboard with mission status indicators  
+✔ Telemetry updates (mocked state)  
+✔ Start / Abort / Reset mission controls  
+✔ Lightweight & fast Vite development environment  
+✔ Modular folder layout for easy extension  
 
-Dashboard UI that displays mission status (launch count, current phase, telemetry)
-
-Ability to start / abort / reset a mission
-
-Simple animation or visual indicator of mission progress
-
-Built using modern frontend tooling: JS, HTML, CSS, Vite build system
-
-Clean folder structure and modular codebase (see Project Structure
-)
-
-Getting Started
+🧰 Getting Started
 Prerequisites
 
-Node.js and npm (or Yarn) installed
+Ensure you have:
 
-Basic familiarity with running web apps from local environment
+Node.js >= 16
+npm or yarn
 
 Installation
-# Clone the repository  
-git clone https://github.com/ebk1996/space_mission_control.git  
-cd space_mission_control  
+# Clone repository
+git clone https://github.com/ebk1996/space_mission_control.git
 
-# Install dependencies  
-npm install  
-# or  
-yarn install  
+# Enter project directory
+cd space_mission_control
+
+# Install dependencies
+npm install
+# or
+yarn install
 
 Running Locally
-# Start the development server  
-npm run dev  
-# or  
-yarn dev  
+# Launch development server
+npm run dev
+# or
+yarn dev
 
 
-This will launch the app in your browser (typically at http://localhost:3000 or whatever Vite indicates).
-Edit files in src/ and hot-reload will reflect changes.
+Vite will output a local development URL (usually http://localhost:5173).
 
-Usage
-
-Once running:
-
-Navigate to the homepage.
-
-You’ll see the mission control dashboard.
-
-Use the “Start Mission” button to begin.
-
-Watch the telemetry update as the mission moves through phases (e.g., Launch → Orbit → Re-entry).
-
-Use the “Abort” or “Reset” controls as necessary to test various states.
-
-Inspect the code under src/ for where mission phase logic is implemented (you can extend or tweak logic/animations).
-
-Tip: If you want to simulate more realistic telemetry, you can modify the logic in src/ to generate dynamic values (altitude, speed, fuel, etc).
-
-Project Structure
-/space_mission_control
+📁 Project Structure
+space_mission_control/
 ├── src/
-│   ├── components/        # reusable UI components
-│   ├── assets/            # images, styles, icons
-│   ├── logic/             # mission state machine, telemetry generator
-│   ├── styles/            # global CSS or SCSS
-│   └── main.js            # entry point
-├── index.html             # main HTML
-├── package.json           # dependencies & scripts
-├── vite.config.js         # Vite build config
-├── .gitignore             # ignore list
-└── LICENSE                # MIT License
+│   ├── components/        # UI components
+│   ├── logic/             # mission state machine, telemetry
+│   ├── assets/            # icons, images, etc
+│   ├── styles/            # CSS or SCSS
+│   └── main.js            # app entry point
+│
+├── index.html
+├── package.json
+├── vite.config.js
+├── LICENSE
+└── README.md
 
-Contributing
+🕹️ Usage
 
-Contributions are very welcome! If you’d like to contribute:
+Once the app launches:
 
-Fork the repo.
+Open the mission dashboard.
 
-Create a new feature branch: git checkout -b feature/my-awesome-mission.
+Click Start Mission to begin the lifecycle simulation.
 
-Make your changes, add tests/documentation where appropriate.
+Watch telemetry and phase indicators update in real-time.
 
-Submit a pull request with details of what your change does and why.
+Use Abort or Reset for testing and UI exploration.
 
-I’ll review and merge if it aligns with the project objectives.
+Modify files in src/ to customize mission logic, animation, or UI.
 
-License
+🖼 Screenshots
 
-This project is licensed under the MIT License. See the LICENSE
- file for full details.
+(Add screenshots here once available)
 
-Roadmap
+![Mission Dashboard Placeholder](docs/screenshot-dashboard.png)
 
-Here are some ideas planned for future versions:
+🧭 Roadmap
+⬜ More realistic telemetry models (velocity, altitude, fuel)
+⬜ Add mission planner (select spacecraft, orbit profiles)
+⬜ Add historical mission templates (Apollo, ISS, etc.)
+⬜ Optional Node/WebSocket backend for multi-user sessions
+⬜ Improved responsive layout + accessibility features
+⬜ Add automated testing suite
 
-Extend telemetry simulation: altitude curve, velocity, fuel usage, communication signal strength
+🤝 Contributing
 
-Add mission-planner UI: choose spacecraft, trajectory, target orbit/planet
+Contributions are welcome!
 
-Add historical mission presets (e.g., Apollo, Mars, ISS)
+1. Fork the project  
+2. Create a feature branch:  git checkout -b feature/my-update  
+3. Commit changes  
+4. Push and open a pull request  
 
-Integrate WebSocket or server backend for multi-user missions
+📄 License
 
-Add unit tests & end-to-end UI tests
+Distributed under the MIT License.
+See the LICENSE file for more information.
 
-Improve mobile responsiveness and accessibilit
