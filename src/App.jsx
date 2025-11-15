@@ -1,25 +1,25 @@
 import styles from "./App.module.css";
 
-import MissionControl from "./components/MissionControl.jsx";
+import CarManagement from "./components/CarManagement.jsx";
 
 function App ()
 {
-	const INITIAL_MISSIONS = [
-		{id: 1, name: "Mars Rover", status: "Planned", crew: ["Alice", "Bob"]},
-		{id: 2, name: "Moon Base", status: "Active", crew: ["Charlie", "Dave"]},
-		{id: 3, name: "Venus Observatory", status: "Planned", crew: ["Eve", "Frank"]},
-		{id: 4, name: "Jupiter Moons Survey", status: "Completed", crew: ["Grace", "Hank"]},
-		{id: 5, name: "Asteroid Belt Mining", status: "Active", crew: ["Ivy", "John"]},
-		{id: 6, name: "Saturn Ring Research", status: "Planned", crew: ["Karen", "Leo"]},
-		{id: 7, name: "Deep Space Probe", status: "Completed", crew: ["Mia", "Nolan"]},
-		{id: 8, name: "Interstellar Observatory", status: "Planned", crew: ["Olivia", "Pete"]},
-		{id: 9, name: "Neptune Atmospheric Study", status: "Active", crew: ["Quinn", "Rachel"]},
-		{id: 10, name: "Pluto Reclamation", status: "Planned", crew: ["Sam", "Tina"]}
+	const INITIAL_CARS = [
+		{id: 1, name: "Toyota Camry 2024", status: "Available", renters: []},
+		{id: 2, name: "Honda Accord 2023", status: "Rented", renters: ["Alice Johnson"]},
+		{id: 3, name: "Tesla Model 3 2024", status: "Available", renters: []},
+		{id: 4, name: "Ford F-150 2023", status: "Maintenance", renters: []},
+		{id: 5, name: "Chevrolet Malibu 2024", status: "Rented", renters: ["Bob Smith"]},
+		{id: 6, name: "BMW 3 Series 2023", status: "Available", renters: []},
+		{id: 7, name: "Audi A4 2024", status: "Maintenance", renters: []},
+		{id: 8, name: "Mercedes C-Class 2023", status: "Available", renters: []},
+		{id: 9, name: "Nissan Altima 2024", status: "Rented", renters: ["Carol Davis"]},
+		{id: 10, name: "Hyundai Sonata 2023", status: "Available", renters: []}
 	];
 
 	return (
 		<div className={styles.mainContainer}>
-			<MissionControl initialMissions={INITIAL_MISSIONS} />
+			<CarManagement initialCars={INITIAL_CARS} />
 		</div>
 	);
 }

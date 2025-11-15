@@ -1,8 +1,8 @@
-import styles from "./MissionFilter.module.css";
+import styles from "./CarFilter.module.css";
 
-function MissionFilter ({setFilter})
+function CarFilter ({setFilter})
 {
-	const STATUSES = ["All", "Planned", "Active", "Completed"];
+	const STATUSES = ["All", "Available", "Rented", "Maintenance"];
 
 	return (
 		<>
@@ -21,4 +21,4 @@ function MissionFilter ({setFilter})
 	);
 }
 
-export default MissionFilter;
+export default CarFilter;

@@ -1,71 +1,60 @@
-🛰️ Space Mission Control
+# 🚗 Car Rental Management
 
-A lightweight, interactive mission-simulation web application built with Vite, JavaScript, HTML, and CSS.
+A lightweight, interactive car rental management web application built with Vite, React, JavaScript, HTML, and CSS.
 
-🔖 Badges
+## 🔖 Badges
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![Version](https://img.shields.io/badge/version-v0.1.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-lightgrey)
 ![Made with](https://img.shields.io/badge/made%20with-JavaScript-yellow)
 
-📘 Table of Contents
+## 📘 Table of Contents
 
-Motivation
+- Motivation
+- Features
+- Getting Started
+  - Prerequisites
+  - Installation
+  - Running Locally
+- Project Structure
+- Usage
+- Screenshots
+- Roadmap
+- Contributing
+- License
 
-Features
+## 🚀 Motivation
 
-Getting Started
+Car rental management systems require tracking vehicle availability, rental status, and customer information.
+This project creates a simple, user-friendly interface for rental car businesses to manage their fleet, offering:
 
-Prerequisites
+- Track rental car inventory
+- Manage rental status (Available, Rented, Maintenance)
+- View renter information
+- Easy status updates with action buttons
 
-Installation
+It's practical, scalable, and easy to customize.
 
-Running Locally
-
-Project Structure
-
-Usage
-
-Screenshots
-
-Roadmap
-
-Contributing
-
-License
-
-🚀 Motivation
-
-Space mission control systems are full of complex states, events, and real-time telemetry.
-This project recreates a simplified version of that ecosystem in a browser, offering an environment to:
-
-Simulate mission lifecycles
-
-Display live-updating telemetry
-
-Explore UI/UX patterns for stateful systems
-
-Experiment with animations, timers, and mission logic
-
-It’s fun, educational, and extendable.
-
-✨ Features
-✔ Mission lifecycle simulation (launch → orbit → re-entry)  
-✔ Dashboard with mission status indicators  
-✔ Telemetry updates (mocked state)  
-✔ Start / Abort / Reset mission controls  
+## ✨ Features
+✔ Car inventory management with status tracking  
+✔ Dashboard with rental status indicators  
+✔ Filter cars by status (Available, Rented, Maintenance)  
+✔ Quick actions: Rent Out, Return, Maintenance  
 ✔ Lightweight & fast Vite development environment  
 ✔ Modular folder layout for easy extension  
 
-🧰 Getting Started
-Prerequisites
+## 🧰 Getting Started
+
+### Prerequisites
 
 Ensure you have:
 
-Node.js >= 16
-npm or yarn
+- Node.js >= 16
+- npm or yarn
 
-Installation
+### Installation
+
+```bash
 # Clone repository
 git clone https://github.com/ebk1996/space_mission_control.git
 
@@ -76,70 +65,74 @@ cd space_mission_control
 npm install
 # or
 yarn install
+```
 
-Running Locally
+### Running Locally
+
+```bash
 # Launch development server
 npm run dev
 # or
 yarn dev
-
+```
 
 Vite will output a local development URL (usually http://localhost:5173).
 
-📁 Project Structure
-space_mission_control/
+## 📁 Project Structure
+
+```
+car_rental_management/
 ├── src/
 │   ├── components/        # UI components
-│   ├── logic/             # mission state machine, telemetry
 │   ├── assets/            # icons, images, etc
-│   ├── styles/            # CSS or SCSS
-│   └── main.js            # app entry point
+│   ├── styles/            # CSS modules
+│   └── main.jsx           # app entry point
 │
 ├── index.html
 ├── package.json
 ├── vite.config.js
 ├── LICENSE
 └── README.md
+```
 
-🕹️ Usage
+## 🕹️ Usage
 
 Once the app launches:
 
-Open the mission dashboard.
+1. Open the car rental dashboard.
+2. View all rental cars with their current status.
+3. Use filter buttons to view cars by status (Available, Rented, Maintenance).
+4. Click action buttons to:
+   - **Rent Out**: Mark a car as rented
+   - **Return**: Mark a car as available again
+   - **Maintenance**: Mark a car as under maintenance
+5. Modify files in `src/` to customize the car data, UI, or functionality.
 
-Click Start Mission to begin the lifecycle simulation.
-
-Watch telemetry and phase indicators update in real-time.
-
-Use Abort or Reset for testing and UI exploration.
-
-Modify files in src/ to customize mission logic, animation, or UI.
-
-🖼 Screenshots
+## 🖼 Screenshots
 
 (Add screenshots here once available)
 
-![Mission Dashboard Placeholder](docs/screenshot-dashboard.png)
+## 🧭 Roadmap
 
-🧭 Roadmap
-⬜ More realistic telemetry models (velocity, altitude, fuel)
-⬜ Add mission planner (select spacecraft, orbit profiles)
-⬜ Add historical mission templates (Apollo, ISS, etc.)
-⬜ Optional Node/WebSocket backend for multi-user sessions
-⬜ Improved responsive layout + accessibility features
-⬜ Add automated testing suite
+⬜ Add detailed renter information (name, contact, rental dates)  
+⬜ Track rental history for each vehicle  
+⬜ Add pricing and payment tracking  
+⬜ Vehicle search and sorting functionality  
+⬜ Add authentication for rental staff  
+⬜ Optional backend API for data persistence  
+⬜ Improved responsive layout + accessibility features  
+⬜ Add automated testing suite  
 
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome!
 
 1. Fork the project  
-2. Create a feature branch:  git checkout -b feature/my-update  
+2. Create a feature branch: `git checkout -b feature/my-update`  
 3. Commit changes  
 4. Push and open a pull request  
 
-📄 License
+## 📄 License
 
 Distributed under the MIT License.
 See the LICENSE file for more information.
-
