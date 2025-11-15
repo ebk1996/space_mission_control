@@ -1,12 +1,13 @@
 import styles from "./CarAction.module.css";
 
-function CarAction ({carId, onUpdateCarStatus})
+function CarAction ({carId, onUpdateCarStatus, onRentOut, carStatus})
 {
 	return (
 		<>
 			<button
 				className={styles.button}
-				onClick={() => onUpdateCarStatus(carId, "Rented")}
+				onClick={() => onRentOut(carId)}
+				disabled={carStatus !== "Available"}
 			>
 				Rent Out
 			</button>
@@ -14,6 +15,7 @@ function CarAction ({carId, onUpdateCarStatus})
 			<button
 				className={styles.button}
 				onClick={() => onUpdateCarStatus(carId, "Available")}
+				disabled={carStatus === "Available"}
 			>
 				Return
 			</button>
