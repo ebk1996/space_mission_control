@@ -1,0 +1,160 @@
+.encryptionContainer {
+	background: white;
+	border-radius: 10px;
+	padding: 2rem;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin: 2rem 0;
+}
+
+.encryptionContainer h2 {
+	color: #1e3c72;
+	margin: 0 0 0.5rem 0;
+}
+
+.description {
+	color: #666;
+	margin: 0 0 1.5rem 0;
+}
+
+.methodSelector {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.methodSelector label {
+	font-weight: 500;
+	color: #333;
+}
+
+.select {
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 1rem;
+	flex: 1;
+	max-width: 300px;
+}
+
+.select:focus {
+	outline: none;
+	border-color: #2a5298;
+}
+
+.keySection {
+	margin-bottom: 1rem;
+}
+
+.keySection label {
+	display: block;
+	font-weight: 500;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.keyInput {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.keyInput input {
+	flex: 1;
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.keyInput input:focus {
+	outline: none;
+	border-color: #2a5298;
+}
+
+.generateButton {
+	padding: 0.5rem 1rem;
+	background: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-weight: 600;
+	cursor: pointer;
+	white-space: nowrap;
+}
+
+.generateButton:hover {
+	background: #45a049;
+}
+
+.textAreas {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+	.textAreas {
+		grid-template-columns: 1fr;
+	}
+}
+
+.textSection {
+	display: flex;
+	flex-direction: column;
+}
+
+.textSection label {
+	font-weight: 500;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.textSection textarea {
+	padding: 0.75rem;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-family: "Courier New", monospace;
+	resize: vertical;
+}
+
+.textSection textarea:focus {
+	outline: none;
+	border-color: #2a5298;
+}
+
+.buttonGroup {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.encryptButton,
+.decryptButton {
+	padding: 0.75rem 2rem;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	font-weight: 600;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.encryptButton {
+	background: #2a5298;
+	color: white;
+}
+
+.encryptButton:hover {
+	background: #1e3c72;
+}
+
+.decryptButton {
+	background: #ff9800;
+	color: white;
+}
+
+.decryptButton:hover {
+	background: #f57c00;
+}
