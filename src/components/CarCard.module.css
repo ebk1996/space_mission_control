@@ -1,0 +1,54 @@
+.cardContainer
+{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.mediaContainer
+{
+  flex-shrink: 0;
+  width: 200px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.media
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.placeholderMedia
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px;
+}
+
+.detailsContainer
+{
+  flex-grow: 1;
+}
+
+.title
+{
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.detail
+{
+  margin-bottom: 8px;
+  font-size: 14px;
+}

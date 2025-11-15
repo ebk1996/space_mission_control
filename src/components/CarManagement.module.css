@@ -1,0 +1,65 @@
+.header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1
+{
+  margin: 0;
+}
+
+.addCarButton
+{
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: 1px solid #4CAF50;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.addCarButton:hover
+{
+  background-color: #45a049;
+  border-color: #45a049;
+}
+
+.filterContainer
+{
+  margin: 20px 0;
+}
+
+.missionContainer
+{
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #ffffff;
+  align-items: center;
+}
+
+.missionContainer:last-child
+{
+  margin-bottom: 20px;
+}
+
+.cardSection
+{
+  flex-grow: 1;
+}
+
+.actionSection
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+}

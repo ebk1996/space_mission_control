@@ -9,6 +9,21 @@
   color: #ffffff;
   border: 2px solid #62ff62;
   background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button:hover:not(:disabled)
+{
+  background-color: #62ff62;
+  color: #000000;
+}
+
+.button:disabled
+{
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: #666;
 }
 
 .button:last-child
